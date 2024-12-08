@@ -8,7 +8,7 @@ const Header = () => {
       <div className="max-w-screen-xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
         <div className="flex items-center space-x-3">
           <Image
-            src="/Vector.png"
+            src="/public/Vector.png"
             alt="Comforty Logo"
             width={40}
             height={23.34}
