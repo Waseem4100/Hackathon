@@ -1,5 +1,6 @@
 import { ShoppingCart } from "lucide-react";
 import { Badge } from "@/components/badge";
+
 import Image from "next/image";
 import Link from "next/link";
 interface Product {
