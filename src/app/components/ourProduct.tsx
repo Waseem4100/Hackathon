@@ -18,7 +18,7 @@ export default function OurProduct() {
       id: 1,
       title: "Library Stool Chair",
       price: 20,
-      image: "/01.jpg",
+      image: "/public/orangemodernchair.jpg",
       isNew: true,
     },
     {

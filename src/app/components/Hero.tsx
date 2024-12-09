@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import ProductImage from "@/public/ProductImage.png"
 
 const Hero = () => {
   return (
@@ -32,7 +33,7 @@ const Hero = () => {
         </div>
         <div className="w-full sm:w-1/2 mt-6 sm:mt-0 sm:ml-[130px] flex justify-center">
           <Image
-            src="/Product Image.png"
+            src={ProductImage}
             alt="Product Image"
             width={434}
             height={584}

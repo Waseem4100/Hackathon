@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import three from "@/public/three.jpg"
 
 const AboutPopularProduct = () => {
   return (
@@ -32,7 +33,7 @@ const AboutPopularProduct = () => {
         </div>
         <div className="text-center">
           <Image
-            src="/3.jpg"
+            src={three}
             alt="3"
             width={305}
             height={375}
