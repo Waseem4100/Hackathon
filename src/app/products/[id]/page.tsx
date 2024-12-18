@@ -1,57 +1,138 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { ReactElement, useEffect, useState } from "react";
 import Image from "next/image";
+import Vintagewhitechair from "@/public/Vintagewhitechair.jpg"
 
 type Product = {
   id: number;
   title: string;
   price: number;
-  image: string;
+  image: ReactElement;
   originalPrice?: number;
   isNew?: boolean;
   isSale?: boolean;
 };
 
 const products: Product[] = [
-  { id: 1, title: "Library Stool Chair", price: 20, image: "/01.jpg" },
+  { id: 1, title: "LibraryStoolChair", price: 20,  image: (
+    <Image
+      src={Vintagewhitechair}
+      alt="car"
+      width={327}
+      height={327}
+    ></Image>
+  ),
+},
   {
     id: 2,
-    title: "Vintage Armchair",
+    title: "VintageArmchair",
     price: 40,
-    image: "/public/02.jpg",
+    image: (
+      <Image
+        src={Vintagewhitechair}
+        alt="car"
+        width={327}
+        height={327}
+      ></Image>
+    ),
+
     originalPrice: 60,
   },
-  { id: 3, title: "Ergonomic Office Chair", price: 50, image: "/03.jpg" },
-  { id: 4, title: "Modern Dining Chair", price: 35, image: "/04.jpg" },
+  { id: 3, title: "ErgonomicOfficeChair", price: 50, image: (
+    <Image
+      src={Vintagewhitechair}
+      alt="car"
+      width={327}
+      height={327}
+    ></Image>
+  ),
+},
+  { id: 4, title: "ModernDiningChair", price: 35,  image: (
+    <Image
+      src={Vintagewhitechair}
+      alt="car"
+      width={327}
+      height={327}
+    ></Image>
+  ),
+},
   {
     id: 5,
-    title: "Reclining Lounge Chair",
+    title: "RecliningLoungeChair",
     price: 60,
-    image: "/public/05.jpg",
+    image: (
+      <Image
+        src={Vintagewhitechair}
+        alt="car"
+        width={327}
+        height={327}
+      ></Image>
+    ),
+
     isSale: true,
   },
   {
     id: 6,
-    title: "Adjustable Desk Chair",
+    title: "AdjustableDeskChair",
     price: 25,
-    image: "/public/06.jpg",
+    image: (
+      <Image
+        src={Vintagewhitechair}
+        alt="car"
+        width={327}
+        height={327}
+      ></Image>
+    ),
+
     isNew: true,
   },
-  { id: 7, title: "Classic Bar Stool", price: 30, image: "/07.jpg" },
+  { id: 7, title: "ClassicBarStool", price: 30,  image: (
+    <Image
+      src={Vintagewhitechair}
+      alt="car"
+      width={327}
+      height={327}
+    ></Image>
+  ),
+},
   {
     id: 8,
-    title: "Sleek High Chair",
+    title: "SleekHighChair",
     price: 15,
-    image: "/public/08.jpg",
+    image: (
+      <Image
+        src={Vintagewhitechair}
+        alt="car"
+        width={327}
+        height={327}
+      ></Image>
+    ),
+
     isSale: true,
   },
-  { id: 9, title: "Foldable Outdoor Chair", price: 10, image: "/09.jpg" },
+  { id: 9, title: "FoldableOutdoorChair", price: 10,  image: (
+    <Image
+      src={Vintagewhitechair}
+      alt="car"
+      width={327}
+      height={327}
+    ></Image>
+  ),
+},
   {
     id: 10,
     title: "Leather Recliner Chair",
     price: 150,
-    image: "/public/10.jpg",
+    image: (
+      <Image
+        src={Vintagewhitechair}
+        alt="LeatherReclinerChair"
+        width={327}
+        height={327}
+      ></Image>
+    ),
+
     isSale: true,
     originalPrice: 200,
   },
@@ -97,13 +178,7 @@ export default function ProductDetail({
       <div className="flex max-w-4xl w-full">
         {/* Image Section */}
         <div className="w-1/2 p-4">
-          <Image
-            src={product.image}
-            alt={product.title}
-            width={300}
-            height={500}
-            className="rounded-lg"
-          />
+        {product.image}
         </div>
 
         {/* Product Details Section */}

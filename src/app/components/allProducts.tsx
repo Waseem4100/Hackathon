@@ -2,12 +2,15 @@ import { ShoppingCart } from "lucide-react";
 import { Badge } from "@/components/badge";
 import Image from "next/image";
 import Link from "next/link";
+import { ReactElement } from "react";
+import Vintagewhitechair from "@/public/Vintagewhitechair.jpg"
+
 
 type Product = {
   id: number;
   title: string;
   price: number;
-  image: string;
+  image: ReactElement;
   originalPrice?: number;
   isNew?: boolean;
   isSale?: boolean;
@@ -27,14 +30,8 @@ const ProductCard = ({ product }: { product: Product }) => (
         </Badge>
       )}
       <Link href={`/product/${product.id}`}>
-        <Image
-          src={product.image}
-          alt={product.title}
-          height={400}
-          width={400}
-          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-          aria-label={`View details of ${product.title}`}
-        />
+        {product.image}
+          
       </Link>
     </div>
     <div className="mt-4 flex items-center justify-between">
@@ -67,7 +64,14 @@ export default function AllProduct() {
       id: 1,
       title: "Library Stool Chair",
       price: 20,
-      image: "/01.jpg",
+      image: (
+        <Image
+          src={Vintagewhitechair}
+          alt="Vintagewhitechair"
+          width={327}
+          height={327}
+        ></Image>
+      ),
       isNew: true,
     },
     {
@@ -75,16 +79,44 @@ export default function AllProduct() {
       title: "Library Stool Chair",
       price: 20,
       originalPrice: 30,
-      image: "/02.jpg",
+      image: (
+        <Image
+          src={Vintagewhitechair}
+          alt="car"
+          width={327}
+          height={327}
+        ></Image>
+      ),
       isSale: true,
     },
-    { id: 3, title: "Library Stool Chair", price: 20, image: "/03.jpg" },
-    { id: 4, title: "Library Stool Chair", price: 20, image: "/04.jpg" },
+    { id: 3, title: "Library Stool Chair", price: 20,  image: (
+      <Image
+        src={Vintagewhitechair}
+        alt="car"
+        width={327}
+        height={327}
+      ></Image>
+    ), },
+    { id: 4, title: "Library Stool Chair", price: 20,  image: (
+      <Image
+        src={Vintagewhitechair}
+        alt="car"
+        width={327}
+        height={327}
+      ></Image>
+    ), },
     {
       id: 5,
       title: "Library Stool Chair",
       price: 20,
-      image: "/05.jpg",
+      image: (
+        <Image
+          src={Vintagewhitechair}
+          alt="car"
+          width={327}
+          height={327}
+        ></Image>
+      ),
       isNew: true,
     },
     {
@@ -92,11 +124,32 @@ export default function AllProduct() {
       title: "Library Stool Chair",
       price: 20,
       originalPrice: 30,
-      image: "/06.jpg",
+      image: (
+        <Image
+          src={Vintagewhitechair}
+          alt="car"
+          width={327}
+          height={327}
+        ></Image>
+      ),
       isSale: true,
     },
-    { id: 7, title: "Library Stool Chair", price: 20, image: "/07.jpg" },
-    { id: 8, title: "Library Stool Chair", price: 20, image: "/01.jpg" },
+    { id: 7, title: "Library Stool Chair", price: 20,  image: (
+      <Image
+        src={Vintagewhitechair}
+        alt="car"
+        width={327}
+        height={327}
+      ></Image>
+    ),},
+    { id: 8, title: "Library Stool Chair", price: 20,  image: (
+      <Image
+        src={Vintagewhitechair}
+        alt="car"
+        width={327}
+        height={327}
+      ></Image>
+    ), },
   ];
 
   return (

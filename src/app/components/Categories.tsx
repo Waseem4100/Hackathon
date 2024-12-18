@@ -1,24 +1,56 @@
 import Image from "next/image";
 import Link from "next/link";
+import  WingChair from "@/public/WingChair.jpg"
+import WoodenChair from "@/public/WoodenChair.jpg"
+import { ReactElement } from "react";
 
+
+
+type Categories = {
+ name : string
+ products : string
+  image: ReactElement;
+ href : string
+};
 export default function Categories() {
-  const categories = [
+  const categories :Categories[] = [
     {
-      name: "Wing Chair",
+      name: "WingChair",
       products: "3,584 Products",
-      image: "/07.jpg",
+      image: (
+        <Image
+          src={WingChair}
+          alt="car"
+          width={327}
+          height={327}
+        ></Image>
+      ),
       href: "/categories/wing-chair",
     },
     {
-      name: "Wooden Chair",
+      name: "WoodenChair",
       products: "157 Products",
-      image: "/08.jpg",
+      image: (
+        <Image
+          src={WoodenChair}
+          alt="car"
+          width={327}
+          height={327}
+        ></Image>
+      ),
       href: "/categories/wooden-chair",
     },
     {
-      name: "Desk Chair",
+      name: "DeskChair",
       products: "154 Products",
-      image: "/04.jpg",
+      image: (
+        <Image
+          src={WoodenChair}
+          alt="car"
+          width={327}
+          height={327}
+        ></Image>
+      ),
       href: "/categories/desk-chair",
     },
   ];
@@ -37,14 +69,9 @@ export default function Categories() {
               className="group relative overflow-hidden rounded-lg"
             >
               <div className="aspect-[4/3] w-full">
-                <Image
-                  src={category.image}
-                  alt={category.name}
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  priority
-                  width={400}
-                  height={400}
-                />
+                {category.image}
+                 
+               
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
                 <div className="absolute bottom-0 p-6">
