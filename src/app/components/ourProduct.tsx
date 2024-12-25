@@ -1,8 +1,17 @@
 import { ShoppingCart } from "lucide-react";
 import { Badge } from "@/components/badge";
+import Grayupholsteredchair from "@/public/Grayupholsteredchair.jpg"
 import Vintagewhitechair from "@/public/Vintagewhitechair.jpg"
+import pinkchair from "@/public/pinkchair.jpg"
+import orangechair from "@/public/orangechair.jpg"
+import whitechair from "@/public/whitechair.jpg"
+import brownchair from "@/public/brownchair.jpg"
+
+
+import WingChair from "@/public/WingChair.jpg"
 
 import Image from "next/image";
+
 import Link from "next/link";
 import { ReactElement } from "react";
 interface Product {
@@ -23,8 +32,8 @@ export default function OurProduct() {
       price: 20,
       image: (
         <Image
-          src={Vintagewhitechair}
-          alt="Vintagewhitechair"
+          src={Grayupholsteredchair}
+          alt="Grayupholsteredchair"
           width={327}
           height={327}
         ></Image>
@@ -38,8 +47,8 @@ export default function OurProduct() {
       originalPrice: 30,
       image: (
         <Image
-          src={Vintagewhitechair}
-          alt="Vintagewhitechair"
+          src={pinkchair}
+          alt="pinkchair"
           width={327}
           height={327}
         ></Image>
@@ -52,8 +61,8 @@ export default function OurProduct() {
       price: 20,
       image: (
         <Image
-          src={Vintagewhitechair}
-          alt="Vintagewhitechair"
+          src={orangechair}
+          alt="orangechair"
           width={327}
           height={327}
         ></Image>
@@ -65,8 +74,8 @@ export default function OurProduct() {
       price: 20,
       image: (
         <Image
-          src={Vintagewhitechair}
-          alt="Vintagewhitechair"
+          src={whitechair}
+          alt="whitechair"
           width={327}
           height={327}
         ></Image>
@@ -78,8 +87,8 @@ export default function OurProduct() {
       price: 20,
       image: (
         <Image
-          src={Vintagewhitechair}
-          alt="Vintagewhitechair"
+          src={brownchair }
+          alt="brownchair "
           width={327}
           height={327}
         ></Image>
@@ -107,7 +116,7 @@ export default function OurProduct() {
       price: 20,
       image: (
         <Image
-          src={Vintagewhitechair}
+          src={WingChair}
           alt="Vintagewhitechair"
           width={327}
           height={327}
@@ -120,8 +129,8 @@ export default function OurProduct() {
       price: 20,
       image: (
         <Image
-          src={Vintagewhitechair}
-          alt="Vintagewhitechair"
+          src={Grayupholsteredchair}
+          alt="Grayupholsteredchair"
           width={327}
           height={327}
         ></Image>
