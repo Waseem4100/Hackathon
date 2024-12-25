@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image";
 import { CiHeart } from "react-icons/ci";
 import { RiDeleteBin6Line } from "react-icons/ri";
-import zerotwo from "@/public/zerotwo.jpg"
+import cartimage from "@/public/cartimage.png"
+import cartimage2 from "@/public/cartimage2.png"
 const Cart = () => {
   return (
     <div className="max-w-[1321px] mx-auto px-4 py-8">
@@ -13,7 +14,7 @@ const Cart = () => {
           <div className="flex items-center justify-between bg-white p-4 rounded-lg shadow-md mb-4">
             <div className="flex items-center space-x-4">
               <div className="w-24 h-24 bg-orange-200 rounded">
-                <Image src={zerotwo} alt="." width={150} height={150} />
+                <Image src={cartimage} alt="." width={150} height={150} />
               </div>
               <div>
                 <h3 className="text-[16px] font-normal text-[#272343] mb-3">
@@ -45,7 +46,7 @@ const Cart = () => {
           <div className="flex items-center justify-between bg-white p-4 rounded-lg shadow-md">
             <div className="flex items-center space-x-4">
               <div className="w-24 h-24 bg-gray-300 rounded">
-                <Image src={zerotwo} alt="." width={150} height={150} />
+                <Image src={cartimage2} alt="." width={150} height={150} />
               </div>
               <div>
                 <h3 className="text-[16px] font-normal text-[#272343] mb-3">
