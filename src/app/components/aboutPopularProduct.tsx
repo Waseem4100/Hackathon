@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import three from "@/public/three.jpg"
+import aboutpopular2 from "@/public/aboutpopular2.png"
+import aboutpopular3 from "@/public/aboutpopular3.jpg"
+
 
 const AboutPopularProduct = () => {
   return (
@@ -22,7 +24,7 @@ const AboutPopularProduct = () => {
         </div>
         <div className="text-center">
           <Image
-            src="/2.jpg"
+            src={aboutpopular2}
             alt="2"
             width={305}
             height={375}
@@ -33,7 +35,7 @@ const AboutPopularProduct = () => {
         </div>
         <div className="text-center">
           <Image
-            src={three}
+            src={aboutpopular3}
             alt="3"
             width={305}
             height={375}

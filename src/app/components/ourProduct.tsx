@@ -1,14 +1,16 @@
 import { ShoppingCart } from "lucide-react";
 import { Badge } from "@/components/badge";
-import Grayupholsteredchair from "@/public/Grayupholsteredchair.jpg"
-import Vintagewhitechair from "@/public/Vintagewhitechair.jpg"
-import pinkchair from "@/public/pinkchair.jpg"
-import orangechair from "@/public/orangechair.jpg"
-import whitechair from "@/public/whitechair.jpg"
-import brownchair from "@/public/brownchair.jpg"
+import ourproductimage from "@/public/ourproductimage.png"
+import ourproductimage2 from "@/public/ourproductimage2.png"
+import ourproductimage3 from "@/public/ourproductimage3.png"
+import ourproductimage4 from "@/public/ourproductimage4.png"
+import ourproductimage5 from "@/public/ourproductimage5.png"
+import ourproductimage6 from "@/public/ourproductimage6.png"
+import ourproductimage7 from "@/public/ourproductimage7.png"
+import ourproductimage8 from "@/public/ourproductimage8.png"
 
 
-import WingChair from "@/public/WingChair.jpg"
+
 
 import Image from "next/image";
 
@@ -32,7 +34,7 @@ export default function OurProduct() {
       price: 20,
       image: (
         <Image
-          src={Grayupholsteredchair}
+          src={ourproductimage}
           alt="Grayupholsteredchair"
           width={327}
           height={327}
@@ -47,7 +49,7 @@ export default function OurProduct() {
       originalPrice: 30,
       image: (
         <Image
-          src={pinkchair}
+          src={ourproductimage2}
           alt="pinkchair"
           width={327}
           height={327}
@@ -61,7 +63,7 @@ export default function OurProduct() {
       price: 20,
       image: (
         <Image
-          src={orangechair}
+          src={ourproductimage3}
           alt="orangechair"
           width={327}
           height={327}
@@ -74,7 +76,7 @@ export default function OurProduct() {
       price: 20,
       image: (
         <Image
-          src={whitechair}
+          src={ourproductimage4}
           alt="whitechair"
           width={327}
           height={327}
@@ -87,7 +89,7 @@ export default function OurProduct() {
       price: 20,
       image: (
         <Image
-          src={brownchair }
+          src={ourproductimage5}
           alt="brownchair "
           width={327}
           height={327}
@@ -102,7 +104,7 @@ export default function OurProduct() {
       originalPrice: 30,
       image: (
         <Image
-          src={Vintagewhitechair}
+          src={ourproductimage6}
           alt="Vintagewhitechair"
           width={327}
           height={327}
@@ -116,7 +118,7 @@ export default function OurProduct() {
       price: 20,
       image: (
         <Image
-          src={WingChair}
+          src={ourproductimage7}
           alt="Vintagewhitechair"
           width={327}
           height={327}
@@ -129,7 +131,7 @@ export default function OurProduct() {
       price: 20,
       image: (
         <Image
-          src={Grayupholsteredchair}
+          src={ourproductimage8}
           alt="Grayupholsteredchair"
           width={327}
           height={327}
@@ -180,8 +182,9 @@ export default function OurProduct() {
                   )}
                 </div>
               </div>
-              <button className="rounded-full bg-[#00B5A5] p-2 text-white transition-colors hover:bg-[#00A294]">
+              <button className=" bg-[#00B5A5] p-2 text-white transition-colors hover:bg-[#00A294]">
                 <ShoppingCart className="h-5 w-5" />
+              
                 <span className="sr-only">Add to cart</span>
               </button>
             </div>
